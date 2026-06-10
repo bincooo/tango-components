@@ -1,13 +1,13 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Tabs: ComponentPrototypeType = {
+export const Tabs: IComponentPrototype = {
   title: '选项卡',
   name: 'Tabs',
   exportType: 'namedExport',
   icon: 'icon-xuanxiangka',
   type: 'container',
-  package: '@music163/antd',
+  package: 'antd',
   help: '提供平级的区域将大块内容进行收纳和展现，保持界面整洁',
   hasChildren: true,
   initChildren:
@@ -77,13 +77,13 @@ export const Tabs: ComponentPrototypeType = {
   ],
 };
 
-export const TabPane: ComponentPrototypeType = {
+export const TabPane: IComponentPrototype = {
   title: '选项卡面板',
   name: 'TabPane',
   exportType: 'namedExport',
   icon: 'icon-xuanxiangka',
   type: 'container',
-  package: '@music163/antd',
+  package: 'antd',
   hasChildren: true,
   props: [
     ...StylePrototypes,

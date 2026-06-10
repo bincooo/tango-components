@@ -1,4 +1,4 @@
-import { ComponentPrototypeType, Dict } from '@music163/tango-helpers';
+import { IComponentPrototype, Dict } from '@music163/tango-helpers';
 import { omitProps } from '../helpers';
 import { Input, TextArea } from './input';
 import { Select } from './select';
@@ -28,13 +28,13 @@ const componentPrototypeMap: Dict = {
   TreeSelect,
 };
 
-export const FormilyForm: ComponentPrototypeType = {
+export const FormilyForm: IComponentPrototype = {
   name: 'FormilyForm',
   title: 'Formily表单',
   exportType: 'namedExport',
   icon: 'icon-biaodan',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: 'Formily 表单',
   hasChildren: true,
   initChildren:
@@ -69,13 +69,13 @@ export const FormilyForm: ComponentPrototypeType = {
   ],
 };
 
-export const FormilyFormItem: ComponentPrototypeType = {
+export const FormilyFormItem: IComponentPrototype = {
   name: 'FormilyFormItem',
   title: 'Formily表单项',
   exportType: 'namedExport',
   icon: 'icon-biaodan',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: 'Formily 表单项',
   hasChildren: false,
   props: [
@@ -151,25 +151,25 @@ export const FormilyFormItem: ComponentPrototypeType = {
   ],
 };
 
-export const FormilyFormFooter: ComponentPrototypeType = {
+export const FormilyFormFooter: IComponentPrototype = {
   name: 'FormilyFormFooter',
   title: 'Formily操作区',
   exportType: 'namedExport',
   icon: 'icon-biaodan',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   hasChildren: true,
   initChildren: `<FormilySubmit>提交</FormilySubmit><FormilyReset>重置</FormilyReset>`,
   relatedImports: ['FormilySubmit', 'FormilyReset'],
 };
 
-export const FormilySubmit: ComponentPrototypeType = {
+export const FormilySubmit: IComponentPrototype = {
   title: '提交',
   name: 'FormilySubmit',
   exportType: 'namedExport',
   icon: 'icon-anniu',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '提交表单',
   hasChildren: false,
   props: [
@@ -201,13 +201,13 @@ export const FormilySubmit: ComponentPrototypeType = {
   ],
 };
 
-export const FormilyReset: ComponentPrototypeType = {
+export const FormilyReset: IComponentPrototype = {
   title: '重置',
   name: 'FormilyReset',
   exportType: 'namedExport',
   icon: 'icon-anniu',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '重置表单。',
   hasChildren: false,
   props: [

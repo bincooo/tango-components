@@ -1,13 +1,13 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { InstancePrototypes } from './common';
 
-export const Interval: ComponentPrototypeType = {
+export const Interval: IComponentPrototype = {
   title: '周期调度器',
   name: 'Interval',
   exportType: 'namedExport',
   icon: 'icon-time-range',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '用于周期性的执行某一个动作。',
   hasChildren: false,
   props: [

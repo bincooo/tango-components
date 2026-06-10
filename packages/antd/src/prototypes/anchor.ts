@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Anchor: ComponentPrototypeType = {
+export const Anchor: IComponentPrototype = {
   name: 'Anchor',
   title: '锚点',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-maodian',
   type: 'element',
   props: [
@@ -62,10 +62,10 @@ export const Anchor: ComponentPrototypeType = {
   ],
 };
 
-export const AnchorLink: ComponentPrototypeType = {
+export const AnchorLink: IComponentPrototype = {
   name: 'Link',
   title: '锚点',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-maodianlink',
   type: 'element',
   props: [

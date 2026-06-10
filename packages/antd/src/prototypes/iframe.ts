@@ -1,13 +1,13 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const IFrame: ComponentPrototypeType = {
+export const IFrame: IComponentPrototype = {
   name: 'IFrame',
   title: '网页框架',
   exportType: 'namedExport',
   icon: 'icon-iframe',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   hasChildren: false,
   props: [
     ...StylePrototypes,

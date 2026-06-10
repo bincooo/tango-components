@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Tag: ComponentPrototypeType = {
+export const Tag: IComponentPrototype = {
   name: 'Tag',
   title: '标签',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-biaoqian',
   type: 'element',
   help: '进行标记和分类的小标签，用于标记事物的属性和维度或分类',
@@ -53,10 +53,10 @@ export const Tag: ComponentPrototypeType = {
   ],
 };
 
-export const CheckableTag: ComponentPrototypeType = {
+export const CheckableTag: IComponentPrototype = {
   name: 'CheckableTag',
   title: '可选择标签',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-kexuanzebiaoqian',
   help: '可点击选中的 Tag 控件',
   type: 'element',

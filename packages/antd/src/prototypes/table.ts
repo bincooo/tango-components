@@ -1,26 +1,31 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 import { Pagination } from './pagination';
 
-const renderChildrenOptions = [
-  { label: '取消自定义', value: '' },
-  {
-    label: '自定义区域',
-    value: 'Box',
-    render: '{(record, index, indent, expanded) => <Box></Box>}',
-    relatedImports: ['Box'],
-  },
-];
 
-export const Table: ComponentPrototypeType = {
+export const Table: IComponentPrototype = {
   title: '简单表格',
   name: 'Table',
   exportType: 'namedExport',
   icon: 'icon-biaoge',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '最基本的表格组件，没有过多复杂的功能。',
   hasChildren: false,
+  initChildren: `
+    <Table<DataType>
+      columns={[
+        { title: 'Name', dataIndex: 'name' },
+        { title: 'Age', dataIndex: 'age' },
+        { title: 'Address', dataIndex: 'address' },
+      ]}
+      dataSource={[
+        { key: '1', name: 'John Brown', age: 32, address: 'New York No. 1 Lake Park' },
+        { key: '2', name: 'Jim Green', age: 42, address: 'London No. 1 Lake Park' },
+        { key: '3', name: 'Joe Black', age: 32, address: 'Sydney No. 1 Lake Park' },
+        { key: '4', name: 'Disabled User', age: 99, address: 'Sydney No. 1 Lake Park' },
+      ]}
+    />`,
   props: [
     ...StylePrototypes,
     {
@@ -168,12 +173,6 @@ export const Table: ComponentPrototypeType = {
       // tip: '{expandedRowRender:function(record, index, indent, expanded): ReactNode,其它配置项}，详细见：',
       // setter: 'tableExpandableSetter',
       props: [
-        {
-          name: 'expandedRowRender',
-          title: '自定义渲染展开区域',
-          setter: 'renderPropsSetter',
-          options: renderChildrenOptions,
-        },
         {
           name: 'rowExpandable',
           title: '设置是否允许行展开',
@@ -368,13 +367,14 @@ export const Table: ComponentPrototypeType = {
   ],
 };
 
-export const TableColumn: ComponentPrototypeType = {
+export const TableColumn: IComponentPrototype = {
   title: '表格列',
-  name: 'TableColumn',
+  name: 'Table.Column',
+  importAlias: 'Table',
   exportType: 'namedExport',
   icon: 'icon-biaoge',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   hasChildren: false,
   props: [
     {

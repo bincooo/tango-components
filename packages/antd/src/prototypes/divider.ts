@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Divider: ComponentPrototypeType = {
+export const Divider: IComponentPrototype = {
   name: 'Divider',
   title: '分割线',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-fengexian',
   type: 'element',
   props: [

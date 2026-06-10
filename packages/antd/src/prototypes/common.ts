@@ -1,6 +1,6 @@
-import { ComponentPropType } from '@music163/tango-helpers';
+import { IComponentProp } from '@music163/tango-helpers';
 
-export const StylePrototypes: ComponentPropType[] = [
+export const StylePrototypes: IComponentProp[] = [
   {
     name: 'style',
     title: '样式对象',
@@ -19,7 +19,7 @@ export const StylePrototypes: ComponentPropType[] = [
   },
 ];
 
-export const InstancePrototypes: ComponentPropType[] = [
+export const InstancePrototypes: IComponentProp[] = [
   {
     name: 'id',
     title: '唯一标识符',
@@ -27,16 +27,9 @@ export const InstancePrototypes: ComponentPropType[] = [
     setter: 'textSetter',
     disableVariableSetter: true,
   },
-  {
-    name: 'model',
-    title: '将值同步到目标变量',
-    tip: '自动将组件变化的结果同步到的变量，后续可以通过该变量获取该组件的状态值。特别的，表单组件使用model可获取所有子项的内容，不需要单独为子项绑定model，详细见：',
-    setter: 'modelSetter',
-    disableVariableSetter: true,
-  },
 ];
 
-export const CommonSystemStylePrototypes: ComponentPropType[] = [
+export const CommonSystemStylePrototypes: IComponentProp[] = [
   {
     name: 'color',
     title: '文本颜色',

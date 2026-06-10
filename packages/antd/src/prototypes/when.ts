@@ -1,12 +1,12 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 
-export const When: ComponentPrototypeType = {
+export const When: IComponentPrototype = {
   title: 'When',
   name: 'When',
   exportType: 'namedExport',
   icon: 'icon-shitu',
   type: 'container',
-  package: '@music163/antd',
+  package: 'antd',
   help: '创建一个条件执行容器，当条件为真时，渲染子节点。',
   hasChildren: true,
   initChildren: '',

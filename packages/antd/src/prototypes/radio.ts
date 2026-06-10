@@ -1,12 +1,12 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { InstancePrototypes, StylePrototypes } from './common';
 
-export const Radio: ComponentPrototypeType = {
+export const Radio: IComponentPrototype = {
   name: 'Radio',
   title: '单选框',
   icon: 'icon-danxuankuang',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '单选框，用于在多个备选项中选中单个状态',
   hasChildren: true,
   initChildren: '单项1',
@@ -51,12 +51,12 @@ export const Radio: ComponentPrototypeType = {
   ],
 };
 
-export const RadioGroup: ComponentPrototypeType = {
+export const RadioGroup: IComponentPrototype = {
   name: 'RadioGroup',
   title: '单选框组',
   icon: 'icon-danxuankuang',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   hasChildren: true,
   help: '单选框组，一组互斥的 Radio 配合使用',
   props: [

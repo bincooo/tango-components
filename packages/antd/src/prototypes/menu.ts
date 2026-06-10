@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Menu: ComponentPrototypeType = {
+export const Menu: IComponentPrototype = {
   name: 'Menu',
   title: '导航菜单',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-daohangcaidan',
   type: 'element',
   help: '为页面和功能提供导航的菜单列表，一般分为顶部导航和侧边导航',
@@ -141,10 +141,10 @@ export const Menu: ComponentPrototypeType = {
   ],
 };
 
-export const MenuItem: ComponentPrototypeType = {
+export const MenuItem: IComponentPrototype = {
   name: 'MenuItem',
   title: '导航菜单',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   props: [
@@ -169,10 +169,10 @@ export const MenuItem: ComponentPrototypeType = {
   ],
 };
 
-export const MenuSubMenu: ComponentPrototypeType = {
+export const MenuSubMenu: IComponentPrototype = {
   name: 'MenuSubMenu',
   title: '导航菜单',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   props: [
@@ -211,10 +211,10 @@ export const MenuSubMenu: ComponentPrototypeType = {
   ],
 };
 
-export const MenuItemGroup: ComponentPrototypeType = {
+export const MenuItemGroup: IComponentPrototype = {
   name: 'MenuItemGroup',
   title: '导航菜单',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   props: [
@@ -224,10 +224,10 @@ export const MenuItemGroup: ComponentPrototypeType = {
   ],
 };
 
-export const MenuDivider: ComponentPrototypeType = {
+export const MenuDivider: IComponentPrototype = {
   name: 'MenuDivider',
   title: '导航菜单',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   props: [

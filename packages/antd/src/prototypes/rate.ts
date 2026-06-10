@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { InstancePrototypes, StylePrototypes } from './common';
 
-export const Rate: ComponentPrototypeType = {
+export const Rate: IComponentPrototype = {
   name: 'Rate',
   title: '评分',
-  package: '@music163/antd',
+  package: 'antd',
   help: '评分组件，用于对评价进行展示或对事物进行快速的评级操作',
   icon: 'icon-pingfen',
   type: 'element',

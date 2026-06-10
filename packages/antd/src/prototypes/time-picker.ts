@@ -1,13 +1,13 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 import { DateRangePicker } from './date-picker';
 
-export const TimePicker: ComponentPrototypeType = {
+export const TimePicker: IComponentPrototype = {
   name: 'TimePicker',
   title: '时间选择框',
   icon: 'icon-shijianxuanze',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   hasChildren: false,
   props: [
     ...StylePrototypes,
@@ -185,12 +185,12 @@ export const TimePicker: ComponentPrototypeType = {
 const names = ['value', 'defaultValue', 'showTime'];
 const others = DateRangePicker.props.filter((item) => names.indexOf(item.name) === -1);
 
-export const TimeRangePicker: ComponentPrototypeType = {
+export const TimeRangePicker: IComponentPrototype = {
   name: 'TimeRangePicker',
   title: '时间选择框 Range',
   icon: 'icon-time-range',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   hasChildren: false,
   props: [
     ...StylePrototypes,

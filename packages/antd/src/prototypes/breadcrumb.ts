@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Breadcrumb: ComponentPrototypeType = {
+export const Breadcrumb: IComponentPrototype = {
   name: 'Breadcrumb',
   title: '面包屑',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-mianbaoxie',
   type: 'element',
   help: '显示当前页面在系统层级结构中的位置，并能向上返回',
@@ -30,10 +30,10 @@ export const Breadcrumb: ComponentPrototypeType = {
   ],
 };
 
-export const BreadcrumbItem: ComponentPrototypeType = {
+export const BreadcrumbItem: IComponentPrototype = {
   name: 'BreadcrumbItem',
   title: '单个面包屑',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   hasChildren: false,
@@ -57,10 +57,10 @@ export const BreadcrumbItem: ComponentPrototypeType = {
   ],
 };
 
-export const BreadcrumbSeparator: ComponentPrototypeType = {
+export const BreadcrumbSeparator: IComponentPrototype = {
   name: 'BreadcrumbSeparator',
   title: '面包屑',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   props: [

@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Descriptions: ComponentPrototypeType = {
+export const Descriptions: IComponentPrototype = {
   name: 'Descriptions',
   title: '描述列表',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-miaoshu',
   help: '成组展示多个只读字段，常见于详情页的信息展示',
   type: 'element',
@@ -97,10 +97,10 @@ export const Descriptions: ComponentPrototypeType = {
   ],
 };
 
-export const DescriptionItem: ComponentPrototypeType = {
+export const DescriptionItem: IComponentPrototype = {
   name: 'DescriptionItem',
   title: '描述列表子项',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-miaoshuliebiaoitem',
   type: 'element',
   hasChildren: false,

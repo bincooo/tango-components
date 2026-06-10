@@ -1,4 +1,4 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 
 const getRender = (tpl: string) => `{(item, index) => (${tpl})}`;
 
@@ -24,10 +24,10 @@ const renderOptions = [
   },
 ];
 
-export const Each: ComponentPrototypeType = {
+export const Each: IComponentPrototype = {
   name: 'Each',
   title: '循环渲染',
-  package: '@music163/antd',
+  package: 'antd',
   help: '用于快速循环渲染一组数据。',
   icon: 'icon-xunhuan',
   type: 'element',

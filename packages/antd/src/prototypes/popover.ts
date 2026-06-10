@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Popover: ComponentPrototypeType = {
+export const Popover: IComponentPrototype = {
   name: 'Popover',
   title: '气泡卡片',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-qipao',
   help: '点击/鼠标移入元素，弹出气泡式的卡片浮层',
   type: 'element',

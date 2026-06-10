@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Timeline: ComponentPrototypeType = {
+export const Timeline: IComponentPrototype = {
   name: 'Timeline',
   title: '时间轴',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-shijianzhou',
   type: 'element',
   help: '垂直展示的时间流信息，用于一系列信息需按时间排列时',
@@ -47,10 +47,10 @@ export const Timeline: ComponentPrototypeType = {
   ],
 };
 
-export const TimelineItem: ComponentPrototypeType = {
+export const TimelineItem: IComponentPrototype = {
   name: 'TimelineItem',
   title: '时间轴',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-shijianzhouitem',
   type: 'element',
   hasChildren: true,

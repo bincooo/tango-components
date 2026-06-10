@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const PageHeader: ComponentPrototypeType = {
+export const PageHeader: IComponentPrototype = {
   name: 'PageHeader',
   title: '页头',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-yetou',
   type: 'element',
   props: [

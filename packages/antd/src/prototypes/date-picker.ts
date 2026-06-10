@@ -1,7 +1,7 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { InstancePrototypes, StylePrototypes } from './common';
 
-export const PickerCommonProps: ComponentPrototypeType['props'] = [
+export const PickerCommonProps: IComponentPrototype['props'] = [
   ...StylePrototypes,
   ...InstancePrototypes,
   {
@@ -247,12 +247,12 @@ export const PickerCommonProps: ComponentPrototypeType['props'] = [
   },
 ];
 
-export const DatePicker: ComponentPrototypeType = {
+export const DatePicker: IComponentPrototype = {
   name: 'DatePicker',
   title: '日期选择框',
   icon: 'icon-riqishijian',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '当需要输入或选择具体日期的控件',
   hasChildren: false,
   props: [
@@ -301,12 +301,12 @@ export const DatePicker: ComponentPrototypeType = {
   ],
 };
 
-export const MonthPicker: ComponentPrototypeType = {
+export const MonthPicker: IComponentPrototype = {
   name: 'MonthPicker',
   title: '月选择器',
   icon: 'icon-month',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '当需要输入或选择具体月份的控件',
   hasChildren: false,
   props: [
@@ -325,34 +325,34 @@ export const MonthPicker: ComponentPrototypeType = {
   ],
 };
 
-export const YearPicker: ComponentPrototypeType = {
+export const YearPicker: IComponentPrototype = {
   name: 'YearPicker',
   title: '年选择器',
   icon: 'icon-year',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '当需要输入或选择具体年份的控件',
   hasChildren: false,
   props: [...PickerCommonProps],
 };
 
-export const WeekPicker: ComponentPrototypeType = {
+export const WeekPicker: IComponentPrototype = {
   name: 'WeekPicker',
   title: '周选择框',
   icon: 'icon-week',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '当需要输入或选择具体周的控件',
   hasChildren: false,
   props: [...PickerCommonProps],
 };
 
-export const DateRangePicker: ComponentPrototypeType = {
+export const DateRangePicker: IComponentPrototype = {
   name: 'DateRangePicker',
   title: '日期选择框 Range',
   icon: 'icon-date-range',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '当需要输入或选择具体日期范围的控件',
   hasChildren: false,
   props: [

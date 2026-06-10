@@ -1,13 +1,13 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Text: ComponentPrototypeType = {
+export const Text: IComponentPrototype = {
   name: 'Text',
   title: '文本',
   exportType: 'namedExport',
   icon: 'icon-wenzi',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '原子布局组件，创建一个行内的文本内容。',
   hasChildren: false,
   initChildren: '文本',

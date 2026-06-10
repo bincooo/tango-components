@@ -1,13 +1,13 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Link: ComponentPrototypeType = {
+export const Link: IComponentPrototype = {
   name: 'Link',
   title: '链接',
   exportType: 'namedExport',
   icon: 'icon-link-button',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '创建一个链接文本，支持跳转到指定的锚点地址。',
   hasChildren: true,
   props: [

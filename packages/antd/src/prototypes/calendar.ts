@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Calendar: ComponentPrototypeType = {
+export const Calendar: IComponentPrototype = {
   name: 'Calendar',
   title: '日历',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-riqixuanze',
   help: '按照日历形式展示数据的容器控件',
   type: 'element',

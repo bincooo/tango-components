@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Progress: ComponentPrototypeType = {
+export const Progress: IComponentPrototype = {
   name: 'Progress',
   title: '进度条',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-jindutiao',
   help: '展示操作的当前进度控件，在操作需要较长时间才能完成时，为用户显示该操作的当前进度和状态',
   type: 'element',

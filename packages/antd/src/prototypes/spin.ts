@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Spin: ComponentPrototypeType = {
+export const Spin: IComponentPrototype = {
   name: 'Spin',
   title: '加载中',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-jiazaizhong',
   help: '用于页面和区块的加载中状态',
   type: 'element',

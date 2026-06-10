@@ -1,12 +1,12 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { InstancePrototypes, StylePrototypes } from './common';
 
-export const TreeSelect: ComponentPrototypeType = {
+export const TreeSelect: IComponentPrototype = {
   name: 'TreeSelect',
   title: '树选择',
   icon: 'icon-shuxingjiegou',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '树型选择控件，类似 Select 的选择控件，可选择的数据结构是一个树形结构时使用',
   hasChildren: true,
   childrenName: 'TreeNode',

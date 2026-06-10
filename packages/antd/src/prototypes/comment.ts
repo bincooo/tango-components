@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Comment: ComponentPrototypeType = {
+export const Comment: IComponentPrototype = {
   name: 'Comment',
   title: '评论',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-pinglun',
   type: 'element',
   help: '对网站内容的反馈、评价和讨论，可用于对事物的讨论，例如页面、博客文章、问题等等',

@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const SkeletonAvatar: ComponentPrototypeType = {
+export const SkeletonAvatar: IComponentPrototype = {
   name: 'SkeletonAvatar',
   title: '骨架屏（头像）',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-placeholder',
   type: 'element',
   hasChildren: true,
@@ -45,10 +45,10 @@ export const SkeletonAvatar: ComponentPrototypeType = {
   ],
 };
 
-export const SkeletonButton: ComponentPrototypeType = {
+export const SkeletonButton: IComponentPrototype = {
   name: 'SkeletonButton',
   title: '骨架屏（按钮）',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-placeholder',
   type: 'element',
   hasChildren: true,
@@ -94,10 +94,10 @@ export const SkeletonButton: ComponentPrototypeType = {
   ],
 };
 
-export const SkeletonInput: ComponentPrototypeType = {
+export const SkeletonInput: IComponentPrototype = {
   name: 'SkeletonInput',
   title: '骨架屏（输入框）',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-placeholder',
   type: 'element',
   hasChildren: true,
@@ -124,10 +124,10 @@ export const SkeletonInput: ComponentPrototypeType = {
   ],
 };
 
-export const SkeletonImage: ComponentPrototypeType = {
+export const SkeletonImage: IComponentPrototype = {
   name: 'SkeletonImage',
   title: '骨架屏（图片）',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-placeholder',
   type: 'element',
   hasChildren: true,
@@ -141,10 +141,10 @@ export const SkeletonImage: ComponentPrototypeType = {
   ],
 };
 
-export const SkeletonNode: ComponentPrototypeType = {
+export const SkeletonNode: IComponentPrototype = {
   name: 'SkeletonNode',
   title: '骨架屏（结点）',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-placeholder',
   type: 'element',
   hasChildren: true,
@@ -158,10 +158,10 @@ export const SkeletonNode: ComponentPrototypeType = {
   ],
 };
 
-export const Skeleton: ComponentPrototypeType = {
+export const Skeleton: IComponentPrototype = {
   name: 'Skeleton',
   title: '骨架屏',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-placeholder',
   help: '在需要等待加载内容的位置提供一个占位图形组合',
   type: 'element',

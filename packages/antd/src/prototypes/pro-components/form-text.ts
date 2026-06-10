@@ -1,17 +1,29 @@
 import { IComponentPrototype } from '@music163/tango-helpers';
-import { InstancePrototypes, StylePrototypes } from './common';
+import { InstancePrototypes, StylePrototypes } from '../common';
 
-export const Input: IComponentPrototype = {
-  name: 'Input',
+export const ProFormText: IComponentPrototype = {
+  name: 'ProFormText',
   title: '输入框',
   icon: 'icon-shurukuang',
   type: 'element',
-  package: 'antd',
-  help: '通过鼠标或键盘输入内容，是最基础的表单域的包装',
+  package: '@ant-design/pro-components',
+  help: '通过鼠标或键盘输入内容，表单域的包装',
   hasChildren: false,
   props: [
     ...StylePrototypes,
     ...InstancePrototypes,
+    {
+      name: 'label',
+      title: '标签',
+      setter: 'textSetter',
+      group: 'basic',
+    },
+    {
+      name: 'name',
+      title: '表单字段',
+      setter: 'textSetter',
+      group: 'basic',
+    },
     {
       name: 'placeholder',
       title: '占位符',
@@ -117,16 +129,28 @@ export const Input: IComponentPrototype = {
   ],
 };
 
-export const TextArea: IComponentPrototype = {
-  name: 'TextArea',
+export const ProFormTextArea: IComponentPrototype = {
+  name: 'ProFormTextArea',
   title: '文本框',
   icon: 'icon-wenbenyu',
   type: 'element',
-  package: 'antd',
+  package: '@ant-design/pro-components',
   help: '用于多行文本输入',
   hasChildren: false,
   props: [
     ...InstancePrototypes,
+    {
+      name: 'label',
+      title: '标签',
+      setter: 'textSetter',
+      group: 'basic',
+    },
+    {
+      name: 'name',
+      title: '表单字段',
+      setter: 'textSetter',
+      group: 'basic',
+    },
     {
       name: 'placeholder',
       title: '占位符',
@@ -202,48 +226,17 @@ export const TextArea: IComponentPrototype = {
   ],
 };
 
-export const Search: IComponentPrototype = {
-  name: 'Search',
-  title: '搜索框',
-  icon: 'icon-sousuokuang',
-  type: 'element',
-  package: 'antd',
-  help: '带有搜索按钮的输入框',
-  hasChildren: false,
-  props: [
-    {
-      name: 'enterButton',
-      title: '显示确认按钮',
-      tip: '可设为按钮文字，与addonAfter冲突',
-      setter: 'boolSetter',
-    },
-    {
-      name: 'loading',
-      title: 'loading状态',
-      setter: 'boolSetter',
-    },
-    {
-      name: 'onSearch',
-      title: '搜索回调',
-      tip: '点击搜索图标、清除图标，或按下回车键时的回调',
-      setter: 'actionSetter',
-      group: 'event',
-    },
-    // 其余与input一致
-    ...Input.props,
-  ],
-};
-
-export const Password: IComponentPrototype = {
-  name: 'Password',
+export const ProFormTextPassword: IComponentPrototype = {
+  name: 'ProFormText.Password',
+  importAlias: 'ProFormText',
   title: '密码输入',
   icon: 'icon-password',
   type: 'element',
-  package: 'antd',
+  package: '@ant-design/pro-components',
   help: '需要输入密码的控件',
   hasChildren: false,
   props: [
-    ...Input.props,
+    ...ProFormText.props,
     {
       name: 'visibilityToggle',
       title: '显示切换按钮',
@@ -253,36 +246,6 @@ export const Password: IComponentPrototype = {
       name: 'iconRender',
       title: '自定义切换按钮',
       setter: 'iconSetter',
-    },
-  ],
-};
-
-export const InputGroup: IComponentPrototype = {
-  name: 'InputGroup',
-  title: '输入框组合',
-  icon: 'icon-shurukuang',
-  type: 'element',
-  package: 'antd',
-  help: '输入框的组合展现',
-  hasChildren: true,
-  props: [
-    {
-      name: 'compact',
-      title: '是否用紧凑模式',
-      setter: 'boolSetter',
-    },
-    {
-      name: 'size',
-      title: 'Group 内控件大小',
-      tip: '控件大小。注：标准表单内的输入框大小限制为 large',
-      setter: 'choiceSetter',
-      setterProps: {
-        options: [
-          { label: '小', value: 'small' },
-          { label: '中', value: 'default' },
-          { label: '大', value: 'large' },
-        ],
-      },
     },
   ],
 };

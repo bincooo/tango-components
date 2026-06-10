@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Avatar: ComponentPrototypeType = {
+export const Avatar: IComponentPrototype = {
   name: 'Avatar',
   title: '头像',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-touxiang',
   help: '用来代表用户或事物，支持图片、图标或字符展示',
   type: 'element',
@@ -84,10 +84,10 @@ export const Avatar: ComponentPrototypeType = {
   ],
 };
 
-export const AvatarGroup: ComponentPrototypeType = {
+export const AvatarGroup: IComponentPrototype = {
   name: 'AvatarGroup',
   title: '头像',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   props: [

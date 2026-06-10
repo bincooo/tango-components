@@ -1,12 +1,12 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { InstancePrototypes, StylePrototypes } from './common';
 
-export const InputNumber: ComponentPrototypeType = {
+export const InputNumber: IComponentPrototype = {
   name: 'InputNumber',
   title: '数字输入框',
   icon: 'icon-jishuqi',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '通过鼠标或键盘，输入范围内的数值',
   hasChildren: false,
   props: [

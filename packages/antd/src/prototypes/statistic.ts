@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Statistic: ComponentPrototypeType = {
+export const Statistic: IComponentPrototype = {
   name: 'Statistic',
   title: '统计数值',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-tongjishuzhi',
   help: '展示统计数值组件，当需要突出某个或某组数字或展示带描述的统计类数据时使用',
   type: 'element',
@@ -47,10 +47,10 @@ export const Statistic: ComponentPrototypeType = {
   ],
 };
 
-export const StatisticCountdown: ComponentPrototypeType = {
+export const StatisticCountdown: IComponentPrototype = {
   name: 'StatisticCountdown',
   title: '统计数值',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   props: [

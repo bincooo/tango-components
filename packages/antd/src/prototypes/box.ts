@@ -1,12 +1,12 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Box: ComponentPrototypeType = {
+export const Box: IComponentPrototype = {
   name: 'Box',
   title: '盒子',
   icon: 'icon-mianban',
   type: 'container',
-  package: '@music163/antd',
+  package: 'antd',
   hasChildren: true,
   siblingNames: ['Box'],
   props: [

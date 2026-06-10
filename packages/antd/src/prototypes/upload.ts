@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Upload: ComponentPrototypeType = {
+export const Upload: IComponentPrototype = {
   name: 'Upload',
   title: '上传',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-shangchuan',
   type: 'element',
   help: '基础的文件选择上传和拖拽上传控件',
@@ -182,10 +182,10 @@ export const Upload: ComponentPrototypeType = {
   ],
 };
 
-export const UploadDragger: ComponentPrototypeType = {
+export const UploadDragger: IComponentPrototype = {
   name: 'UploadDragger',
   title: '拖拽上传',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   props: [

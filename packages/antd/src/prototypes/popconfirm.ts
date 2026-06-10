@@ -1,11 +1,11 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 import { Button as ButtonPrototype } from './button';
 
-export const Popconfirm: ComponentPrototypeType = {
+export const Popconfirm: IComponentPrototype = {
   name: 'Popconfirm',
   title: '气泡确认框',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-qipaoqueren',
   help: '点击元素，弹出气泡式的确认框',
   type: 'element',

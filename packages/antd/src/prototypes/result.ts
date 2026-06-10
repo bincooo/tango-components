@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Result: ComponentPrototypeType = {
+export const Result: IComponentPrototype = {
   name: 'Result',
   title: '结果',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-jieguo',
   help: '用于反馈一系列操作任务的处理结果',
   type: 'element',

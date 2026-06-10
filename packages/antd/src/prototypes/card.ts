@@ -1,12 +1,12 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 import { Tabs as TabsPrototype } from './tabs';
 import { omitProps } from '../helpers';
 
-export const Card: ComponentPrototypeType = {
+export const Card: IComponentPrototype = {
   name: 'Card',
   title: '卡片',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-card',
   help: '最基础的卡片容器，可承载文字、列表、图片、段落，常用于后台概览页面',
   type: 'element',
@@ -120,10 +120,10 @@ export const Card: ComponentPrototypeType = {
   ],
 };
 
-export const CardGrid: ComponentPrototypeType = {
+export const CardGrid: IComponentPrototype = {
   name: 'CardGrid',
   title: '卡片Grid',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-kapiangrid',
   type: 'element',
   props: [
@@ -136,10 +136,10 @@ export const CardGrid: ComponentPrototypeType = {
   ],
 };
 
-export const CardMeta: ComponentPrototypeType = {
+export const CardMeta: IComponentPrototype = {
   name: 'CardMeta',
   title: '卡片',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   props: [

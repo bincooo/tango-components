@@ -1,13 +1,13 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Modal: ComponentPrototypeType = {
+export const Modal: IComponentPrototype = {
   title: '弹窗',
   name: 'Modal',
   exportType: 'namedExport',
   icon: 'icon-tanchuang',
   type: 'container',
-  package: '@music163/antd',
+  package: 'antd',
   help: '需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。',
   hasChildren: true,
   initChildren: '',

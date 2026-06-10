@@ -1,11 +1,11 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 import { Pagination } from './pagination';
 
-export const List: ComponentPrototypeType = {
+export const List: IComponentPrototype = {
   name: 'List',
   title: '列表',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-liebiao',
   help: '最基础的列表展示，可承载文字、列表、图片、段落，常用于后台数据展示页面',
   type: 'element',
@@ -89,10 +89,10 @@ export const List: ComponentPrototypeType = {
   ],
 };
 
-export const ListItem: ComponentPrototypeType = {
+export const ListItem: IComponentPrototype = {
   name: 'ListItem',
   title: '列表Item',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-shujuzhanshiitem',
   type: 'element',
   hasChildren: true,
@@ -114,10 +114,10 @@ export const ListItem: ComponentPrototypeType = {
   ],
 };
 
-export const ListItemMeta: ComponentPrototypeType = {
+export const ListItemMeta: IComponentPrototype = {
   name: 'ListItemMeta',
   title: '列表Item',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   relatedImports: ['Avatar'],

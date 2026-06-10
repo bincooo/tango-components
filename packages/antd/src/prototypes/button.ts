@@ -1,13 +1,13 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Button: ComponentPrototypeType = {
+export const Button: IComponentPrototype = {
   title: '按钮',
   name: 'Button',
   exportType: 'namedExport',
   icon: 'icon-anniu',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '按钮用于开始一个即时操作。',
   hasChildren: false,
   props: [
@@ -36,9 +36,22 @@ export const Button: ComponentPrototypeType = {
       setter: 'iconSetter',
     },
     {
-      name: 'isText',
-      title: '文本按钮',
-      setter: 'boolSetter',
+      name: 'variant',
+      title: '设置按钮的变体',
+      setter: 'choiceSetter',
+      options: [
+        { label: 'outlined', value: 'outlined' },
+        { label: 'dashed', value: 'dashed' },
+        { label: 'solid', value: 'solid' },
+        { label: 'filled', value: 'filled' },
+        { label: 'text', value: 'text' },
+        { label: 'link', value: 'link' },
+      ],
+    },
+    {
+      name: 'color',
+      title: '颜色',
+      setter: 'textSetter',
     },
     {
       name: 'shape',

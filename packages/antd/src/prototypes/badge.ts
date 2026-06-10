@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Badge: ComponentPrototypeType = {
+export const Badge: IComponentPrototype = {
   name: 'Badge',
   title: '徽标数',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-huibiaoshu',
   help: '图标右上角的圆形徽标数字，用于显示需要处理的消息条数',
   type: 'element',
@@ -83,10 +83,10 @@ export const Badge: ComponentPrototypeType = {
   ],
 };
 
-export const RibbonBadge: ComponentPrototypeType = {
+export const RibbonBadge: IComponentPrototype = {
   name: 'RibbonBadge',
   title: '缎带徽标',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-duandaihuibiao',
   type: 'element',
   help: '使用缎带型的徽标',

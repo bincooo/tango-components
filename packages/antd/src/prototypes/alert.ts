@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Alert: ComponentPrototypeType = {
+export const Alert: IComponentPrototype = {
   name: 'Alert',
   title: '警告提示',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-xinxitishi',
   help: '警告提示，展现需要关注的信息',
   type: 'element',
@@ -77,10 +77,10 @@ export const Alert: ComponentPrototypeType = {
   ],
 };
 
-export const AlertErrorBoundary: ComponentPrototypeType = {
+export const AlertErrorBoundary: IComponentPrototype = {
   name: 'AlertErrorBoundary',
   title: '警告提示',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   props: [

@@ -1,13 +1,13 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Drawer: ComponentPrototypeType = {
+export const Drawer: IComponentPrototype = {
   title: '抽屉',
   name: 'Drawer',
   exportType: 'namedExport',
   icon: 'icon-chouti',
   type: 'container',
-  package: '@music163/antd',
+  package: 'antd',
   help: '屏幕边缘滑出的浮层面板。',
   hasChildren: true,
   initChildren: '',

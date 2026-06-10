@@ -1,13 +1,13 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { InstancePrototypes, StylePrototypes } from './common';
 
-export const Cascader: ComponentPrototypeType = {
+export const Cascader: IComponentPrototype = {
   title: '级联选择',
   name: 'Cascader',
   exportType: 'namedExport',
   icon: 'icon-jilianxuanze',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '级联选择框，从一组相关联的数据集合进行选择，如省市区，公司层级，事物分类等',
   hasChildren: false,
   props: [

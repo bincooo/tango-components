@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Steps: ComponentPrototypeType = {
+export const Steps: IComponentPrototype = {
   name: 'Steps',
   title: '步骤条',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-buzhoutiao',
   type: 'element',
   help: '引导用户按照流程完成任务的导航条，当任务复杂或者存在先后关系时，将其分解成一系列步骤，从而简化任务。',
@@ -111,10 +111,10 @@ export const Steps: ComponentPrototypeType = {
   ],
 };
 
-export const StepsItem: ComponentPrototypeType = {
+export const StepsItem: IComponentPrototype = {
   name: 'StepsItem',
   title: '步骤条',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   props: [

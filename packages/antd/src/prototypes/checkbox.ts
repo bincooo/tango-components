@@ -1,12 +1,12 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { InstancePrototypes, StylePrototypes } from './common';
 
-export const Checkbox: ComponentPrototypeType = {
+export const Checkbox: IComponentPrototype = {
   name: 'Checkbox',
   title: '多选框',
   icon: 'icon-duoxuankuang',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '多选框，单独使用可以表示两种状态之间的切换，和 Switch 类似',
   hasChildren: true,
   initChildren: '选项1',
@@ -60,12 +60,12 @@ export const Checkbox: ComponentPrototypeType = {
   ],
 };
 
-export const CheckboxGroup: ComponentPrototypeType = {
+export const CheckboxGroup: IComponentPrototype = {
   name: 'CheckboxGroup',
   title: '多选框组',
   icon: 'icon-duoxuankuang',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '多选框，在一组可选项中进行多项选择时',
   props: [
     ...StylePrototypes,

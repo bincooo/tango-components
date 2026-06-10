@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Slider: ComponentPrototypeType = {
+export const Slider: IComponentPrototype = {
   name: 'Slider',
   title: '滑动输入条',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-huadongtiao',
   help: '滑动型输入器，展示当前值和可选范围',
   type: 'element',

@@ -1,9 +1,9 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 
-export const Dropdown: ComponentPrototypeType = {
+export const Dropdown: IComponentPrototype = {
   name: 'Dropdown',
   title: '下拉菜单',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-xialacaidan',
   type: 'element',
   initChildren: '<a>Hover me <Icon type="DownOutlined" /></a>',
@@ -77,10 +77,10 @@ export const Dropdown: ComponentPrototypeType = {
   ],
 };
 
-export const DropdownButton: ComponentPrototypeType = {
+export const DropdownButton: IComponentPrototype = {
   name: 'DropdownButton',
   title: '下拉菜单',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   props: [

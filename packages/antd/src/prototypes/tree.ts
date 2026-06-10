@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Tree: ComponentPrototypeType = {
+export const Tree: IComponentPrototype = {
   name: 'Tree',
   title: '树形控件',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-shuxingjiegou',
   help: '多层次的结构列表，如需要展示文件夹、组织架构、生物分类、国家地区数据等等',
   type: 'element',
@@ -261,10 +261,10 @@ export const Tree: ComponentPrototypeType = {
   ],
 };
 
-export const TreeNode: ComponentPrototypeType = {
+export const TreeNode: IComponentPrototype = {
   name: 'TreeNode',
   title: '树形控件节点',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-shuxingjiegou',
   type: 'element',
   props: [
@@ -307,10 +307,10 @@ export const TreeNode: ComponentPrototypeType = {
   ],
 };
 
-export const DirectoryTree: ComponentPrototypeType = {
+export const DirectoryTree: IComponentPrototype = {
   name: 'DirectoryTree',
   title: '树形控件',
-  package: '@music163/antd',
+  package: 'antd',
   icon: '',
   type: 'element',
   props: [

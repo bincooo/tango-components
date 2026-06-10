@@ -24,6 +24,7 @@ export * from './each';
 export * from './empty';
 export * from './form';
 export * from './formily';
+export * from './grid';
 export * from './iframe';
 export * from './image';
 export * from './input-number';
@@ -31,6 +32,7 @@ export * from './input';
 export * from './interval';
 export * from './link';
 export * from './list';
+export * from './Layout';
 export * from './mentions';
 export * from './menu';
 export * from './modal';
@@ -65,3 +67,11 @@ export * from './tree-select';
 export * from './tree';
 export * from './typography';
 export * from './upload';
+
+
+/////////
+export * from './pro-components/basic-content';
+export * from './pro-components/drawer-form';
+export * from './pro-components/form-text';
+export * from './pro-components/modal-search';
+export * from './pro-components/form-select';

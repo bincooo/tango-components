@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Carousel: ComponentPrototypeType = {
+export const Carousel: IComponentPrototype = {
   name: 'Carousel',
   title: '走马灯',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-zoumadeng',
   type: 'element',
   help: '旋转木马，一组轮播的区域',

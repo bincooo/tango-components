@@ -1,16 +1,15 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Space: ComponentPrototypeType = {
+export const Space: IComponentPrototype = {
   name: 'Space',
   title: '间距',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-jianju',
   type: 'element',
   help: '设置组件之间的间距',
   hasChildren: true,
-  initChildren: '<Placeholder text="放置替换" /><Placeholder text="放置替换" />',
-  relatedImports: ['Placeholder'],
+  initChildren: `<div>放置替换</div>`,
   props: [
     ...StylePrototypes,
     {

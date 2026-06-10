@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Empty: ComponentPrototypeType = {
+export const Empty: IComponentPrototype = {
   name: 'Empty',
   title: '空状态',
-  package: '@music163/antd',
+  package: 'antd',
   help: '空状态时的展示占位图',
   icon: 'icon-kongzhuangtai',
   type: 'element',

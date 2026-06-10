@@ -1,9 +1,9 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 
-export const Affix: ComponentPrototypeType = {
+export const Affix: IComponentPrototype = {
   name: 'Affix',
   title: '固钉',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-guding',
   type: 'element',
   props: [

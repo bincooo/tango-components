@@ -1,11 +1,11 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 
-export const Page: ComponentPrototypeType = {
+export const Page: IComponentPrototype = {
   name: 'Page',
   title: '页面容器',
   icon: 'icon-page',
   type: 'page',
-  package: '@music163/antd',
+  package: 'antd',
   hasChildren: true,
   props: [
     {

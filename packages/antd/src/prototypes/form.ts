@@ -1,4 +1,4 @@
-import { ComponentPrototypeType, Dict } from '@music163/tango-helpers';
+import { IComponentPrototype, Dict } from '@music163/tango-helpers';
 import { Input, Password, TextArea } from './input';
 import { InputNumber } from './input-number';
 import { Switch } from './switch';
@@ -35,19 +35,22 @@ const componentMap: Dict = {
   UploadFile: Upload,
 };
 
-export const Form: ComponentPrototypeType = {
+export const Form: IComponentPrototype = {
   name: 'Form',
   title: '基本表单',
   exportType: 'namedExport',
   icon: 'icon-biaodan',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '最基本的表单组件，可以创建一个轻量级表单。',
   hasChildren: true,
-  initChildren:
-    '<FormItem component="Input" label="表单项" /><FormItem component="Input" label="表单项" /><FormItem component="Input" label="表单项" /><FormFooter><Button type="primary" htmlType="submit">提交</Button></FormFooter>',
-  relatedImports: ['FormItem', 'FormFooter', 'Button'],
-  childrenName: ['FormItem', 'Fieldset', 'FormFooter'],
+  relatedImports: ['Input'],
+  initChildren: `
+    <Form.Item label="表单项"><Input /></Form.Item>
+    <Form.Item label="表单项"><Input /></Form.Item>
+    <Form.Item label="表单项"><Input /></Form.Item>
+  `,
+  childrenName: ['FormItem'],
   props: [
     ...StylePrototypes,
     {
@@ -64,23 +67,21 @@ export const Form: ComponentPrototypeType = {
     },
     {
       name: 'labelCol',
-      title: '标签占据格子个数',
-      setter: 'numberSetter',
-      setterProps: {
-        min: 0,
-        max: 24,
+      title: 'label 标签布局',
+      setter: 'expressionSetter',
+      initValue: {
+        xs: { span: 24 },
+        sm: { span: 6 },
       },
-      initValue: 4,
     },
     {
       name: 'wrapperCol',
-      title: '控件占据格子个数',
-      setter: 'numberSetter',
-      setterProps: {
-        min: 0,
-        max: 24,
+      title: '控件布局',
+      setter: 'expressionSetter',
+      initValue: {
+        xs: { span: 24 },
+        sm: { span: 14 },
       },
-      initValue: 16,
     },
     {
       name: 'colon',
@@ -140,39 +141,15 @@ export const Form: ComponentPrototypeType = {
   ],
 };
 
-export const Fieldset: ComponentPrototypeType = {
-  name: 'Fieldset',
-  title: '表单组',
-  exportType: 'namedExport',
-  icon: 'icon-biaodan',
-  type: 'element',
-  package: '@music163/antd',
-  hasChildren: true,
-  initChildren:
-    '<FormItem component="Input" label="表单项" /><FormItem component="Input" label="表单项" />',
-  relatedImports: ['FormItem'],
-  props: [
-    ...StylePrototypes,
-    {
-      name: 'title',
-      title: '分组标题',
-      setter: 'textSetter',
-    },
-    {
-      name: 'columns',
-      title: '列数配置',
-      setter: 'numberSetter',
-    },
-  ],
-};
 
-export const FormItem: ComponentPrototypeType = {
-  name: 'FormItem',
+export const FormItem: IComponentPrototype = {
+  name: 'Form.Item',
+  importAlias: 'Form',
   title: '基本表单项',
   exportType: 'namedExport',
   icon: 'icon-biaodan',
-  type: 'element',
-  package: '@music163/antd',
+  type: 'container',
+  package: 'antd',
   help: '一个基本的表单项',
   hasChildren: true,
   props: [
@@ -181,7 +158,6 @@ export const FormItem: ComponentPrototypeType = {
       name: 'component',
       title: '控件类型',
       setter: 'pickerSetter',
-      initValue: 'Input',
       options: [
         { label: '文本输入', value: 'Input' },
         { label: '数字输入', value: 'InputNumber' },
@@ -275,25 +251,19 @@ export const FormItem: ComponentPrototypeType = {
           'defaultValue',
           'value',
         ]);
-        return {
+        return proto.title ? null : {
           title: proto.title + '属性',
           props,
         };
       },
+      getVisible(form) {
+        const type = form.getValue('component');
+        if (!type) {
+          return false;
+        }
+        return !!componentMap[type];
+      },
       disableVariableSetter: true,
     },
   ],
-};
-
-export const FormFooter: ComponentPrototypeType = {
-  name: 'FormFooter',
-  title: '基本表单页脚',
-  exportType: 'namedExport',
-  icon: 'icon-biaodan',
-  type: 'element',
-  package: '@music163/antd',
-  hasChildren: true,
-  initChildren: '<Button type="primary" htmlType="submit">提交</Button>',
-  relatedImports: ['Button'],
-  props: [...StylePrototypes],
 };

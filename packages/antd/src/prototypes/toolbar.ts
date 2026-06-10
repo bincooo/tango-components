@@ -1,12 +1,12 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Toolbar: ComponentPrototypeType = {
+export const Toolbar: IComponentPrototype = {
   name: 'Toolbar',
   title: '工具栏',
   icon: 'icon-toolbar',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   hasChildren: true,
   props: [
     ...StylePrototypes,

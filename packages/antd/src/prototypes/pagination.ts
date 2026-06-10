@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Pagination: ComponentPrototypeType = {
+export const Pagination: IComponentPrototype = {
   name: 'Pagination',
   title: '分页',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-fenyeqi',
   help: '采用分页的形式分隔长列表，每次只加载一个页面',
   type: 'element',

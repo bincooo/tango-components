@@ -1,14 +1,14 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Image: ComponentPrototypeType = {
+export const Image: IComponentPrototype = {
   name: 'Image',
   title: '图片',
   exportType: 'namedExport',
   icon: 'icon-tupian',
   type: 'element',
   help: '展示一种图片，并且可以进入快捷预览态。',
-  package: '@music163/antd',
+  package: 'antd',
   hasChildren: false,
   props: [
     ...StylePrototypes,
@@ -55,14 +55,14 @@ export const Image: ComponentPrototypeType = {
   ],
 };
 
-export const ImageList: ComponentPrototypeType = {
+export const ImageList: IComponentPrototype = {
   name: 'ImageList',
   title: '图片列表',
   exportType: 'namedExport',
   icon: 'icon-tupian',
   type: 'element',
   help: '当需要展示一组图片时，从一张图片点开相册，可在 Table 的单元格或描述列表中使用',
-  package: '@music163/antd',
+  package: 'antd',
   hasChildren: false,
   props: [
     ...StylePrototypes,

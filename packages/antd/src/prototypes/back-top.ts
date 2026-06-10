@@ -1,9 +1,9 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 
-export const BackTop: ComponentPrototypeType = {
+export const BackTop: IComponentPrototype = {
   name: 'BackTop',
   title: '回到顶部',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-huidaodingbu',
   type: 'element',
   props: [

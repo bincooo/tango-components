@@ -4,7 +4,7 @@ import { StylePrototypes } from './common';
 export const Typography: IComponentPrototype = {
   name: 'Typography',
   title: '排版容器',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-wenzi',
   type: 'element',
   hasChildren: true,
@@ -118,7 +118,7 @@ const commonTypographyProps: IComponentPrototype['props'] = [
 export const Title: IComponentPrototype = {
   name: 'Title',
   title: '标题',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-header',
   help: '创建一个标题文本，可以展示不同级别的标题。',
   type: 'element',
@@ -149,7 +149,7 @@ export const Title: IComponentPrototype = {
 export const Paragraph: IComponentPrototype = {
   name: 'Paragraph',
   title: '段落',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-paragraph',
   help: '创建一个文本段落，提供默认的布局和样式设置。',
   type: 'element',

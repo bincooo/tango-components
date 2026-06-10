@@ -1,4 +1,4 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { InstancePrototypes, StylePrototypes } from './common';
 
 const mockData = [];
@@ -10,10 +10,10 @@ for (let i = 0; i < 5; i++) {
   });
 }
 
-export const Transfer: ComponentPrototypeType = {
+export const Transfer: IComponentPrototype = {
   name: 'Transfer',
   title: '穿梭框',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-chuansuokuang1',
   type: 'element',
   help: '双栏穿梭选择框，需要在多个可选项中进行多选时使用的控件',
@@ -140,10 +140,10 @@ export const Transfer: ComponentPrototypeType = {
 };
 
 // 属性的属性
-// export const Render: ComponentPrototypeType = {
+// export const Render: IComponentPrototype = {
 //   name: 'Render',
 //   title: '穿梭框',
-//   package: '@music163/antd',
+//   package: 'antd',
 //   icon: '',
 //   type: 'element',
 // //   props: [

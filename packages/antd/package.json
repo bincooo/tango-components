@@ -6,8 +6,6 @@
   "homepage": "https://github.com/netease/tango-components#readme",
   "license": "MIT",
   "exports": {
-    ".": "./lib/cjs/index.js",
-    "./es": "./lib/esm/index.js",
     "./designer": "./lib/esm/designer.js",
     "./prototypes": "./lib/esm/prototypes/index.js"
   },

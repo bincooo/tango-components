@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { InstancePrototypes, StylePrototypes } from './common';
 
-export const AutoComplete: ComponentPrototypeType = {
+export const AutoComplete: IComponentPrototype = {
   name: 'AutoComplete',
   title: '自动完成',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-zidongwancheng',
   help: '输入框自动完成功能，可提供输入建议/辅助提示能力',
   type: 'element',

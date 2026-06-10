@@ -1,4 +1,4 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { InstancePrototypes, StylePrototypes } from './common';
 
 export const CommonPrototypes: any = [
@@ -73,12 +73,12 @@ export const ActionPrototypes = [
   },
 ];
 
-export const Select: ComponentPrototypeType = {
+export const Select: IComponentPrototype = {
   name: 'Select',
   title: '下拉选择',
   icon: 'icon-xuanzeqi',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '下拉选择器，弹出一个下拉菜单给用户选择操作',
   hasChildren: true,
   props: [

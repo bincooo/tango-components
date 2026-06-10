@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Mentions: ComponentPrototypeType = {
+export const Mentions: IComponentPrototype = {
   name: 'Mentions',
   title: '提及',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-tiji',
   type: 'element',
   help: '提及组件，用于在输入中提及某人或某事，常用于发布、聊天或评论功能',
@@ -87,10 +87,10 @@ export const Mentions: ComponentPrototypeType = {
   ],
 };
 
-export const MentionsOption: ComponentPrototypeType = {
+export const MentionsOption: IComponentPrototype = {
   name: 'MentionsOption',
   title: '提及',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-tijioption',
   type: 'element',
   props: [

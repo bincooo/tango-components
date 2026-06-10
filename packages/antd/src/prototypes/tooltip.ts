@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Tooltip: ComponentPrototypeType = {
+export const Tooltip: IComponentPrototype = {
   name: 'Tooltip',
   title: '文字提示',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-wenzitishi',
   help: '简单的文字提示气泡框，气泡浮层不承载复杂文本和操作',
   type: 'element',

@@ -1,12 +1,12 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { InstancePrototypes, StylePrototypes } from './common';
 
-export const Switch: ComponentPrototypeType = {
+export const Switch: IComponentPrototype = {
   name: 'Switch',
   title: '开关',
   icon: 'icon-kaiguan',
   type: 'element',
-  package: '@music163/antd',
+  package: 'antd',
   help: '开关选择器，需要表示开关状态/两种状态之间的切换控件',
   hasChildren: false,
   props: [

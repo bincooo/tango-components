@@ -1,10 +1,10 @@
-import { ComponentPrototypeType } from '@music163/tango-helpers';
+import { IComponentPrototype } from '@music163/tango-helpers';
 import { StylePrototypes } from './common';
 
-export const Collapse: ComponentPrototypeType = {
+export const Collapse: IComponentPrototype = {
   name: 'Collapse',
   title: '折叠面板',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-zhediemianban',
   help: '可以折叠/展开的内容区域，对复杂区域进行分组和隐藏，保持页面的整洁',
   type: 'element',
@@ -84,10 +84,10 @@ export const Collapse: ComponentPrototypeType = {
   ],
 };
 
-export const CollapsePanel: ComponentPrototypeType = {
+export const CollapsePanel: IComponentPrototype = {
   name: 'CollapsePanel',
   title: '折叠面板Panel',
-  package: '@music163/antd',
+  package: 'antd',
   icon: 'icon-zhediemianban',
   type: 'element',
   props: [

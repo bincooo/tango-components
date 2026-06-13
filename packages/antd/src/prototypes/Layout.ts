@@ -11,15 +11,16 @@ export const Layout: IComponentPrototype = {
   hasChildren: true,
   initChildren: `
     <Layout style={{ height: 300 }}>
-      <Layout.Sider
-        width="25%"
-        style={{ backgroundColor: "#1677ff" }}
-      ></Layout.Sider>
-      <Layout.Content
-        style={{ backgroundColor: "#0958d9" }}
-      ></Layout.Content>
+      <Layout.Sider>
+        <div className="dnd-box" />
+      </Layout.Sider>
+      <Layout.Content>
+        <div className="dnd-box" />
+      </Layout.Content>
     </Layout>
-    <Layout.Footer style={{ backgroundColor: "#4096ff" }}></Layout.Footer>
+    <Layout.Footer>
+      <div className="dnd-box" />
+    </Layout.Footer>
   `,
   props: [
     ...StylePrototypes,

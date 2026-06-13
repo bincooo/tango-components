@@ -16,9 +16,9 @@ export const Row: IComponentPrototype = {
   hasChildren: true,
   relatedImports: ['Col'],
   initChildren: `
-    <Col span={8}>col-8</Col>
-    <Col span={8}>col-8</Col>
-    <Col span={8}>col-8</Col>
+    <Col span={8}><div className="dnd-box" /></Col>
+    <Col span={8}><div className="dnd-box" /></Col>
+    <Col span={8}><div className="dnd-box" /></Col>
   `,
   childrenName: ['Col'],
   props: [
@@ -40,6 +40,7 @@ export const Row: IComponentPrototype = {
       name: 'gutter',
       title: '栅格间隔',
       setter: 'numberSetter',
+      initValue: 16,
     },
     {
       name: 'justify',

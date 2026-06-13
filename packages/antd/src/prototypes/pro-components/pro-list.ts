@@ -1,0 +1,145 @@
+import { IComponentPrototype } from '@music163/tango-helpers';
+import { StylePrototypes } from '../common';
+import { Pagination } from '../pagination';
+
+export const ProList: IComponentPrototype = {
+  name: 'ProList',
+  title: '高级列表',
+  exportType: 'namedExport',
+  icon: 'icon-liebiao',
+  type: 'element',
+  package: '@ant-design/pro-components',
+  help: 'ProComponents 提供的高级列表组件，支持搜索、分页、列表项自定义渲染等功能。',
+  hasChildren: false,
+  props: [
+    ...StylePrototypes,
+    {
+      name: 'dataSource',
+      title: '数据源',
+      tip: '列表数据，支持异步数据载入',
+      setter: 'expressionSetter',
+      group: 'basic',
+    },
+    {
+      name: 'request',
+      title: '获取数据的方法',
+      tip: '格式：(params, sort, filter) => Promise<{ data, success, total }>',
+      setter: 'expressionSetter',
+      group: 'basic',
+    },
+    {
+      name: 'params',
+      title: '请求参数',
+      tip: '用于 request 的额外参数，变化时会触发 request 重新执行',
+      setter: 'expressionSetter',
+      group: 'basic',
+    },
+    {
+      name: 'rowKey',
+      title: '数据主键',
+      setter: 'textSetter',
+      group: 'basic',
+    },
+    {
+      name: 'metas',
+      title: '列表项元数据配置',
+      tip: '配置列表项的标题、描述、头像、操作等渲染方式',
+      setter: 'expressionSetter',
+      group: 'basic',
+    },
+    {
+      name: 'grid',
+      title: '栅格布局配置',
+      tip: '设置列表的栅格布局，如 { gutter: 16, column: 4 }',
+      setter: 'expressionSetter',
+    },
+    {
+      name: 'split',
+      title: '是否使用分割线',
+      setter: 'boolSetter',
+      defaultValue: true,
+    },
+    {
+      name: 'itemLayout',
+      title: '列表布局',
+      setter: 'choiceSetter',
+      options: [
+        { label: '水平', value: 'horizontal' },
+        { label: '垂直', value: 'vertical' },
+      ],
+    },
+    {
+      name: 'size',
+      title: '列表大小',
+      setter: 'choiceSetter',
+      options: [
+        { label: '默认', value: 'default' },
+        { label: '小', value: 'small' },
+        { label: '大', value: 'large' },
+      ],
+    },
+    {
+      name: 'bordered',
+      title: '显示边框',
+      setter: 'boolSetter',
+    },
+    {
+      name: 'loading',
+      title: '加载中状态',
+      setter: 'boolSetter',
+      group: 'basic',
+    },
+    {
+      name: 'search',
+      title: '搜索配置',
+      tip: 'false 时隐藏搜索表单',
+      setter: 'expressionSetter',
+      group: 'basic',
+    },
+    {
+      name: 'toolBarRender',
+      title: '工具栏渲染',
+      tip: '格式：() => ReactNode[]',
+      setter: 'expressionSetter',
+    },
+    {
+      name: 'pagination',
+      title: '分页设置',
+      props: Pagination.props,
+    },
+    {
+      name: 'headerTitle',
+      title: '列表头部标题',
+      setter: 'textSetter',
+      group: 'basic',
+    },
+    {
+      name: 'onLoad',
+      title: '数据加载完成后触发',
+      tip: '格式：(dataSource) => void',
+      setter: 'actionSetter',
+      group: 'event',
+    },
+    {
+      name: 'onRequestError',
+      title: '数据加载失败时触发',
+      tip: '格式：(error) => void',
+      setter: 'actionSetter',
+      group: 'event',
+    },
+    {
+      name: 'onDataSourceChange',
+      title: '数据源变化时触发',
+      tip: '格式：(dataSource) => void',
+      setter: 'actionSetter',
+      group: 'event',
+    },
+    {
+      name: 'onRow',
+      title: '设置行属性',
+      autoCompleteOptions: ['(record, index) => {}'],
+      setter: 'expressionSetter',
+      group: 'advanced',
+    },
+  ],
+};

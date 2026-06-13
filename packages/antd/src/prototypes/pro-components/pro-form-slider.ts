@@ -1,0 +1,117 @@
+import { IComponentPrototype } from '@music163/tango-helpers';
+import { InstancePrototypes, StylePrototypes } from '../common';
+
+export const ProFormSlider: IComponentPrototype = {
+  name: 'ProFormSlider',
+  title: '滑动输入条',
+  icon: 'icon-huadongtiao',
+  type: 'element',
+  package: '@ant-design/pro-components',
+  help: 'ProForm 滑动型输入器，展示当前值和可选范围',
+  hasChildren: false,
+  props: [
+    ...StylePrototypes,
+    ...InstancePrototypes,
+    {
+      name: 'label',
+      title: '标签',
+      setter: 'textSetter',
+      group: 'basic',
+    },
+    {
+      name: 'name',
+      title: '表单字段',
+      setter: 'textSetter',
+      group: 'basic',
+    },
+    {
+      name: 'value',
+      title: '当前值',
+      setter: 'numberSetter',
+      tip: '当 range 为 false 时使用 number，否则用 [number, number]',
+      group: 'basic',
+    },
+    {
+      name: 'defaultValue',
+      title: '设置初始取值',
+      setter: 'numberSetter',
+      tip: '当 range 为 false 时使用 number，否则用 [number, number]',
+      group: 'basic',
+    },
+    {
+      name: 'min',
+      title: '最小值',
+      setter: 'numberSetter',
+      defaultValue: 0,
+    },
+    {
+      name: 'max',
+      title: '最大值',
+      setter: 'numberSetter',
+      defaultValue: 100,
+    },
+    {
+      name: 'step',
+      title: '步长',
+      tip: '取值必须大于 0，并且可被 (max - min) 整除',
+      setter: 'numberSetter',
+      defaultValue: 1,
+    },
+    {
+      name: 'range',
+      title: '双滑块模式',
+      setter: 'boolSetter',
+      defaultValue: false,
+    },
+    {
+      name: 'disabled',
+      title: '禁用',
+      setter: 'boolSetter',
+      defaultValue: false,
+    },
+    {
+      name: 'dots',
+      title: '是否只能拖拽到刻度上',
+      setter: 'boolSetter',
+      defaultValue: false,
+    },
+    {
+      name: 'marks',
+      title: '刻度标记',
+      tip: 'key 的类型必须为 number 且取值在闭区间 [min, max] 内',
+      setter: 'expressionSetter',
+    },
+    {
+      name: 'vertical',
+      title: '垂直方向',
+      setter: 'boolSetter',
+      tip: '值为 true 时，Slider 为垂直方向',
+    },
+    {
+      name: 'reverse',
+      title: '反向坐标轴',
+      setter: 'boolSetter',
+      defaultValue: false,
+    },
+    {
+      name: 'tipFormatter',
+      title: '格式化 Tooltip 的内容',
+      setter: 'expressionSetter',
+      tip: 'Slider 会把当前值传给 tipFormatter，并在 Tooltip 中显示返回值，若为 null 则隐藏 Tooltip',
+    },
+    {
+      name: 'onChange',
+      title: '值变化回调',
+      setter: 'actionSetter',
+      group: 'event',
+      autoCompleteOptions: ['(value) => {}'],
+    },
+    {
+      name: 'onAfterChange',
+      title: '鼠标释放回调',
+      setter: 'actionSetter',
+      group: 'event',
+      tip: '与 onmouseup 触发时机一致，把当前值作为参数传入',
+    },
+  ],
+};

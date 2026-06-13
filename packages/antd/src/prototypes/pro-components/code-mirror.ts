@@ -1,13 +1,13 @@
 import { IComponentPrototype } from '@music163/tango-helpers';
 import { InstancePrototypes, StylePrototypes } from '../common';
 
-export const ProModalSearchField: IComponentPrototype = {
-  name: 'ProModalSearchField',
+export const ProCodeMirrorField: IComponentPrototype = {
+  name: 'ProCodeMirrorField',
   exportType: 'defaultExport',
-  title: '模态选择框',
+  title: '代码编辑框',
   icon: 'icon-shurukuang',
   type: 'element',
-  package: '#src/components/modal-search',
+  package: '#src/components/code-mirror',
   help: '通过特定窗口输入内容，弹出选择的包装',
   hasChildren: false,
   
@@ -57,30 +57,6 @@ export const ProModalSearchField: IComponentPrototype = {
       group: 'basic',
     },
     {
-      name: 'maxLength',
-      title: '最大长度',
-      setter: 'numberSetter',
-    },
-    {
-      name: 'size',
-      title: '控件大小',
-      tip: '控件大小。注：标准表单内的输入框大小限制为 large',
-      setter: 'choiceSetter',
-      setterProps: {
-        options: [
-          { label: '小', value: 'small' },
-          { label: '中', value: 'default' },
-          { label: '大', value: 'large' },
-        ],
-      },
-    },
-    {
-      name: 'allowClear',
-      title: '允许清除内容',
-      setter: 'boolSetter',
-      group: 'basic',
-    },
-    {
       name: 'onChange',
       title: '内容变化回调',
       setter: 'actionSetter',
@@ -88,8 +64,8 @@ export const ProModalSearchField: IComponentPrototype = {
       autoCompleteOptions: ['({target:{value}})=>{}'],
     },
     {
-      name: 'bordered',
-      title: '边框',
+      name: 'readonly',
+      title: '只读',
       setter: 'boolSetter',
     },
     {
@@ -99,10 +75,27 @@ export const ProModalSearchField: IComponentPrototype = {
       group: 'basic',
     },
     {
-      name: 'prefix',
-      title: '前缀图标',
-      setter: 'iconSetter',
-      group: 'advanced',
+      name: 'language',
+      title: '编码语言',
+      group: 'basic',
+      setter: 'choiceSetter',
+      setterProps: {
+        options: [
+          { label: "javascript", value: "javascript" },
+          { label: "typescript", value: "ts" },
+          { label: "tsx", value: "tsx" },
+          { label: "vue", value: "vue" },
+          { label: "json", value: "json" },
+          { label: "html", value: "html" },
+          { label: "css", value: "css" },
+          { label: "less", value: "less" },
+          { label: "scss", value: "scss" },
+          { label: "java", value: "java" },
+          { label: "sql", value: "sql" },
+          { label: "xml", value: "xml" },
+        ],
+      },
+      initValue: "javascript",
     },
   ],
 };

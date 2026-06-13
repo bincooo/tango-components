@@ -8,10 +8,7 @@ export const Collapse: IComponentPrototype = {
   icon: 'icon-zhediemianban',
   help: '可以折叠/展开的内容区域，对复杂区域进行分组和隐藏，保持页面的整洁',
   type: 'element',
-  hasChildren: true,
-  childrenName: 'CollapsePanel',
-  initChildren: `<CollapsePanel  header="panel1" key="1"><Placeholder text="放置替换" /></CollapsePanel><CollapsePanel header="panel2" key="2"><Placeholder text="放置替换" /></CollapsePanel><CollapsePanel header="panel3" key="3"><Placeholder text="放置替换" /></CollapsePanel>`,
-  relatedImports: ['Placeholder', 'CollapsePanel'],
+  hasChildren: false,
   props: [
     ...StylePrototypes,
     {
@@ -81,46 +78,35 @@ export const Collapse: IComponentPrototype = {
       group: 'event',
       autoCompleteOptions: ['(key)=>{}'],
     },
+    {
+      name: 'items',
+      title: '折叠项目内容',
+      setter: 'expressionSetter',
+      tip: '例：{() => <Icon type="AccountBookOutlined" />}',
+      initValue: `{{[
+      {
+        key: "1",
+        label: "This is panel header 1",
+        children: (
+          <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+        ),
+      },
+      {
+        key: "2",
+        label: "This is panel header 2",
+        children: (
+          <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+        ),
+      },
+      {
+        key: "3",
+        label: "This is panel header 3",
+        children: (
+          <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+        ),
+      },
+    ]}}`
+    },
   ],
 };
 
-export const CollapsePanel: IComponentPrototype = {
-  name: 'CollapsePanel',
-  title: '折叠面板Panel',
-  package: 'antd',
-  icon: 'icon-zhediemianban',
-  type: 'element',
-  props: [
-    ...StylePrototypes,
-    {
-      name: 'collapsible',
-      title: '可折叠',
-      tip: '是否可折叠或指定可折叠触发区域',
-      setter: 'pickerSetter',
-      setterProps: {
-        options: [
-          { label: 'header', value: 'header' },
-          { label: 'disabled', value: 'disabled' },
-        ],
-      },
-    },
-    {
-      name: 'extra',
-      title: '面板右上角的内容',
-      setter: 'expressionSetter',
-    },
-    {
-      name: 'forceRender',
-      title: '被隐藏时是否渲染 DOM 结构',
-      setter: 'boolSetter',
-      group: 'advanced',
-    },
-    { name: 'header', title: '面板头内容', setter: 'expressionSetter' },
-    { name: 'key', title: 'activeKey', setter: 'textSetter' },
-    {
-      name: 'showArrow',
-      title: '是否展示当前面板上的箭头',
-      setter: 'boolSetter',
-    },
-  ],
-};

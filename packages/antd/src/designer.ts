@@ -16,7 +16,7 @@ export const menuData = {
     },
     {
       title: '布局',
-      items: ['Layout', 'Row', 'Col', 'Card', 'CardGrid', 'CardMeta', 'Tabs', 'TabPane', 'Collapse', 'CollapsePanel'],
+      items: ['Layout', 'Row', 'Col', 'Card', 'Tabs', 'TabPane', 'Collapse', 'CollapsePanel'],
     },
     {
       title: '导航',
@@ -43,6 +43,10 @@ export const menuData = {
       items: ['Affix', 'BackTop', 'Comment', 'Toolbar', 'Transfer', 'Column', 'Columns'],
     },
     {
+      title: '高级控制',
+      items: ['PermissionButton', 'SwitchControl'],
+    },
+    {
       title: '高级布局',
       items: ['ProLayout', 'ProCard'],
     },
@@ -60,12 +64,12 @@ export const menuData = {
         'ProFormSlider', 'ProFormRate',
         'ProFormUploadButton', 'ProFormUploadDragger',
         'ProFormSegmented', 'ProFormTreeSelect', 'ProFormCascader',
-        'ProModalSearchField', 'ProCodeMirrorField',
+        'ProModalSearchField', 'ProCodeMirrorField', 'S3Uploader',
       ],
     },
     {
       title: '高级展示',
       items: ['ProTable', 'ProList', 'ProDescriptions'],
-    },
+    }
   ]
 };

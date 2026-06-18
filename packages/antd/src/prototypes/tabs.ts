@@ -11,7 +11,7 @@ export const Tabs: IComponentPrototype = {
   help: '提供平级的区域将大块内容进行收纳和展现，保持界面整洁',
   hasChildren: true,
   initChildren:
-    '<TabPane key="1" tab="选项卡1"></TabPane><TabPane key="2" tab="选项卡2"></TabPane>',
+    '<TabPane key="1" tab="选项卡1"><div className="dnd-box" /></TabPane><TabPane key="2" tab="选项卡2"><div className="dnd-box" /></TabPane>',
   childrenName: 'TabPane',
   relatedImports: ['TabPane'],
   props: [
@@ -85,6 +85,7 @@ export const TabPane: IComponentPrototype = {
   type: 'container',
   package: 'antd',
   hasChildren: true,
+  initChildren: `<div className="dnd-box" />`,
   props: [
     ...StylePrototypes,
     { name: 'key', title: '选项卡标识', setter: 'textSetter', autoInitValue: true, },

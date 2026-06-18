@@ -11,8 +11,7 @@ export const Card: IComponentPrototype = {
   help: '最基础的卡片容器，可承载文字、列表、图片、段落，常用于后台概览页面',
   type: 'element',
   hasChildren: true,
-  initChildren: `<Placeholder text="放置替换" />`,
-  relatedImports: ['Placeholder'],
+  initChildren: `<div className="dnd-box" />`,
   props: [
     ...StylePrototypes,
     { name: 'title', title: '卡片标题', setter: 'expressionSetter', initValue: '标题' },

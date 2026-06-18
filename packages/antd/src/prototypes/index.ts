@@ -91,3 +91,6 @@ export * from './pro-components/pro-list';
 export * from './pro-components/pro-descriptions';
 export * from './pro-components/pro-card';
 export * from './pro-components/pro-layout';
+export * from './pro-components/permission-button';
+export * from './pro-components/switch-control';
+export * from './pro-components/s3-uploader';
